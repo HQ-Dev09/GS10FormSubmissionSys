@@ -1,0 +1,292 @@
+
+
+
+.boxes {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 1rem;
+}
+
+.box {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.boxLeftSide {
+    /* background-color: #0077FF; */
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+}
+
+.boxLeftSide img {
+    height: 100%;
+    width: 100%;
+}
+
+.boxRightSide {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxRightSide h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.boxRightSide b {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+
+
+.lastPartmaniDashbord {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* background-color: red; */
+    height: 100%;
+    /* height: 100%; */
+}
+
+.recentFormactions {
+    height: 300px;
+    width: 600px;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+}
+.recentFormactions::-webkit-scrollbar{
+    width: 10px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    height: 10px;
+}
+.recentFormactions::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color:#0077FF;
+    border-radius: 10px;
+}
+.tableLefttop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tableLefttop h3 {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px 10px 15px;
+}
+
+.tableLefttop table {
+    width: 100%;
+    min-width: 500px;
+    height: 100%;
+}
+
+.tableLefttop table thead {
+    background-color: #0077FF;
+    color: white;
+}
+
+.tableLefttop table thead tr {
+    height: 40px;
+    text-align: center;
+}
+
+.tableLefttop table thead tr th {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.tableLefttop table tbody {
+    color: rgb(0, 0, 0);
+}
+
+.tableLefttop table tbody tr {
+    height: 40px;
+    text-align: center;
+}
+
+.tableLefttop table tbody tr td {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.tableLefttop table tbody tr td:nth-child(1){
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+}
+
+.align {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.align span {
+    padding-left: 10px;
+}
+
+.userProfilePic {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.userProfilePic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.userprofilenot {
+    border: none;
+    padding-top: 10px;
+}
+
+.approved span {
+    background-color: #0077FF;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.reject span {
+    background-color: #ff016b;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.CheckstatusOfAuthorites {
+    height:300px;
+    width: 350px;
+    /* flex: 1; */
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+.CheckstatusOfAuthorites::-webkit-scrollbar{
+    width: 10px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    height: 10px;
+}
+.CheckstatusOfAuthorites::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color:#0077FF;
+    border-radius: 10px;
+}
+.rightsideTableDes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* height: 300px;
+    overflow: scroll; */
+}
+
+.rightsideTableDes h3 {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px 10px 15px;
+}
+
+.rightsideTableDes table {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.rightsideTableDes table thead {
+    background-color: #0077FF;
+    color: white;
+}
+
+.rightsideTableDes table thead tr {
+    height: 40px;
+    text-align: center;
+}
+
+.rightsideTableDes table thead tr th {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.rightsideTableDes table tbody tr {
+    height: 40px;
+    text-align: center;
+}
+
+.rightsideTableDes table tbody tr td {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+    text-align: center;
+    /* width: 100%; */
+}
+.rightsideTableDes table tbody tr td:nth-child(1){
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+}
+
+
+@media (max-width:1240px) {
+    .lastPartmaniDashbord{
+        height: 100vh;
+        margin-bottom: 25px;
+        /* background-color: green; */
+    }
+    .recentFormactions {
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    .CheckstatusOfAuthorites {
+        width: 100%;
+        /* height: 100%; */
+    }
+}

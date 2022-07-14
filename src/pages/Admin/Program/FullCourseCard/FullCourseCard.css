@@ -1,0 +1,174 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+.mainContainerCard{
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+}
+.maincontainerCardTop{
+    height: 300px;;
+    width: 100%;
+}
+.maincontainerCardTop img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.maincontainerCardTop .details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.details .ProgramDetails{
+font-family: 'Montserrat', sans-serif;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+line-height: 25px;
+padding: 0px 5px;
+}
+.maincontainerCardTop h1{
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 5px;
+    font-size: 28px;
+}
+.maincontainerCardBottom{
+    height: 250px;
+    background-color: aliceblue;
+    width: 100%;
+}
+.viewAllCourses{
+    margin-top: 0px;
+    overflow: scroll;
+}
+.viewAllCourses table{
+    /* font-weight: bold; */
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    /* border: 1px solid rgb(119, 119, 119); */
+}
+.viewAllCourses table thead{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 13px;
+    background-color: rgb(64, 64, 64);
+}
+.viewAllCourses table thead tr{
+   padding: 2px;
+   height: 40px;
+}
+.viewAllCourses table thead tr th{
+   padding: 2px;
+   height: 40px;
+}
+.viewAllCourses table tbody{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+.viewAllCourses table tbody tr{
+    transition: all .3s ease-in-out;
+    height: 100%;
+}
+.viewAllCourses table tbody tr td{
+    transition: all .3s ease-in-out;
+    height: 100%;
+    text-align: center;
+}
+.viewAllCourses table tbody tr td:last-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+/* .viewAllCourses table tbody tr td a img{
+    height: 20px;
+    margin: 2px;
+    background-color: transparent;
+}
+.viewAllCourses table tbody tr td button{
+    border: none;
+    outline: none;
+}
+.viewAllCourses table tbody tr td button img{
+    height: 20px;
+    margin: 2px;
+    background-color: transparent;
+} */
+.viewAllCourses table tbody .button:nth-child(1){
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 4px 13px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid skyblue;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    color: #0077FF;
+    width: 100%;
+    margin: 2px;
+    transition: all .2s ease-in-out;
+}
+.viewAllCourses table tbody .button:nth-child(1):hover{
+    background-color: #0077FF;
+    border: 1px solid #0077FF;
+    color: #ffffff;
+    transition: all .2s ease-in-out;
+}
+.viewAllCourses table tbody .button:nth-child(2){
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 4px 4px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: white;
+    border:  1px solid #a31414;
+    cursor: pointer;
+    text-align: center;
+    color: #a31414;
+    margin: 2px;
+    transition: all .2s ease-in-out;
+}
+.viewAllCourses table tbody .button:nth-child(2):hover{
+    background-color: #a31414;
+    border:  1px solid #a31414;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    transition: all .2s ease-in-out;
+}
+.viewAllCourses table tbody tr:hover{
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
+}
+.viewAllCourses table tbody tr:nth-child(even){
+    background-color: rgb(141, 143, 146);
+    color: white;
+}
+/* .viewAllCourses table tbody tr:nth-child(even):hover{
+    background-color: #0077FF;
+    color: white;
+} */
+.viewAllCourses table tbody tr:nth-child(odd){
+    background-color: rgb(234, 234, 234);
+    color: rgb(0, 0, 0);
+}

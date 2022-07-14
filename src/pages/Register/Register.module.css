@@ -1,0 +1,169 @@
+:root{
+    --GWhiteColor:white;
+    --GBlackColor:rgb(0, 0, 0);
+    --Blue:#010457;
+    --Montserrat:'Montserrat', sans-serif;
+    --Colgate:'Courgette', cursive;
+    --GVibes:'Great Vibes', cursive;
+    --btnColor:#0d6efd;
+    --lato: 'Lato', sans-serif;
+    --Nunito:'Nunito', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.Registry_container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    /* margin-top: calc(100vh - 90vh); */
+    /* margin-top: 30px; */
+    height: 100vh;
+}
+.Registry_form_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+.Registry_form_head img{
+    height: 47px;
+}
+.Registry_form_head h1{
+    font-family: var(--Nunito);
+    font-weight:600;
+    text-align: center;
+    font-size: 30px;
+    color: var(--GBlackColor);
+    margin-left: 15px;
+}
+.Registry_Form{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    background-color: rgb(244, 245, 242);
+    /* height:80%; */
+    /* max-height: 95%; */
+    padding:0 3% ;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 80%;
+    /* margin-top: calc(90vh - 90vh); */
+}
+.Registry_Form_top{
+    height: 80px;
+    /* background-color: yellowgreen; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.Registry_Form_top h3{
+    font-family: var(--lato);
+    font-weight: bolder;
+    font-size: 23px;
+    /* margin-top: 10px; */
+}
+.Registry_Form_top p{
+    font-family: var(--Montserrat);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -26px;
+}
+.Registry_Form_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: chartreuse; */
+    padding: 10px;
+    /* align-items: center; */
+}
+.form_fields{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    /* padding: 5px; */
+    /* background-color: turquoise; */
+}
+.form_fields label{
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.form_fields input{
+    font-family: var(--Montserrat);
+    font-weight: 500;
+    font-size: 15px;
+    /* width: 98%; */
+    border: none;
+    outline: none;
+    padding: 7px;
+    border-radius: 5px;
+    border:1px solid rgba(0, 0, 0,.3)
+}
+.form_fields input:focus{
+    border: 2px solid skyblue;
+}
+.Registry_Form_center button{
+    padding: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--btnColor);
+    color: var(--GWhiteColor);
+    font-family: var(--Montserrat);
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.Registry_Form_end{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+    text-align: left;
+    margin-top: 10px;
+    width: 100%;
+}
+.Registry_Form_end p{
+    font-family: var(--Montserrat);
+    padding: 20px;
+    font-weight: 500;
+}
+.Registry_Form_end a{
+    text-decoration: none;
+    background-color:var(--btnColor) ;
+    color: var(--GWhiteColor);
+    padding: 12px 15px;
+    /* width: 100%; */
+    text-align: center;
+    border-radius: 5px;
+    font-family: var(--Montserrat);
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    margin-top: auto;
+    padding: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-weight: 100;
+    /* width: 100%; */
+    /* word-spacing: 3px; */
+}

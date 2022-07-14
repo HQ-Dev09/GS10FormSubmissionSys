@@ -1,0 +1,432 @@
+.DasboardSidebar {
+    position: relative;
+}
+
+.Create_Program {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    right: 0;
+    /* opacity: .4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    z-index: 99;
+}
+
+.Hide_Create_Program {
+    display: none;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.ProgramCard {
+    width: 350px;
+    max-width: 85%;
+    height: 210px;
+    max-height: 70%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.CardTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /* background-color:green ; */
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.CardTop .leftSide h2 {
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.CardTop .rightSide {
+    height: 100%;
+    /* background-color: aliceblue; */
+
+}
+
+.CardTop .rightSide img {
+    height: 30px;
+    padding: 5px 5px 0px 0px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.CardTop .rightSide img:hover {
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+}
+
+.CardBottom {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.ProgramCardAlignInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 80px;
+    width: 100%;
+}
+
+.ProgramCardAlignInput label {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.ProgramCardAlignInput input {
+    border: none;
+    outline: 2px solid rgb(58, 194, 248);
+    height: 37px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 6px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.CardBottom button {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0077FF;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CourseCreationForm {
+    /* background-color: red; */
+    margin-top: 20px;
+}
+
+.CreateCourseBtn {
+    height: 50px;
+    background: linear-gradient(90deg, rgb(126, 173, 239) 0%, rgba(148,196,253,1) 27%, rgba(0,138,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 7px;
+}
+
+.CreateCourseBtn button {
+    margin-right: 5px;
+    /* width: 100%; */
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0077FF;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CourseCardContainer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    right: 0;
+    /* opacity: .4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    z-index: 99;
+}
+
+.CourseCardContainerHide {
+    display: none;
+    visibility: hidden;
+}
+
+.CourseCard {
+    width: 390px;
+    max-width: 85%;
+    height: 300px;
+    max-height: 70%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.CardTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* background-color:green ; */
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.CardTop .CourseleftSide h2 {
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.CardTop .rightSide {
+    height: 100%;
+    /* background-color: aliceblue; */
+
+}
+
+.CardTop .CourserightSide img {
+    height: 30px;
+    padding: 5px 5px 0px 0px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.CardTop .CourserightSide img:hover {
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+}
+
+.CardBottom {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    /* background-color: #0014ff; */
+}
+
+.CourseAlignfields {
+    height: 60px;
+    /* background-color: #acacac; */
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.CourseCardAlignInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.CourseCardAlignInput label {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.CourseCardAlignInput input {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 175px;
+    padding-left: 5px;
+    border: 2px solid #0077FF;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.CourseCardAlignInput select {
+    outline: none;
+    height: 30px;
+    width: 175px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid #0077FF;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    background-color: #0077FF;
+    color: white;
+}
+
+.CourseCardAlignInput select:focus {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.viewAllCourses{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.allCours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+.allCours h1{
+    padding-left: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+.viewAllCourseCon{
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    /* margin-bottom: 30px; */
+    overflow: hidden;
+    position: relative;
+}
+.ProgramsCardContainer{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+.ProgramDetailCard{
+    background-color: #0077FF;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor:pointer;
+    transition: all .4s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+
+
+.ProgramDetailCard:hover{
+    margin: 8px 0px 5px 0px;
+    transform: scale(1.02);
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    transition: all .4s ease-in-out;
+}
+.ProgramDetailCardTop{
+    width: 100%;
+    height: 140px;
+}
+.ProgramDetailCard h3{
+    height: 45px;
+    font-family: 'Nunito', sans-serif;
+    width: 150px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    line-height: 23px;
+}
+.ProgramDetailCardTop .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* background-color: #51b9eb; */
+    height: 95px;
+    width: 100%;
+    object-fit:contain;
+}
+.ProgramDetailCardTop .img img{
+    height: 70px;
+}
+.ProgramDetailCardBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.ProgramDetailCardBottom .content{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+.NextPrevBt{
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
+     background: linear-gradient(90deg, rgb(126, 173, 239) 0%, rgba(148,196,253,1) 27%, rgba(0,138,255,1) 100%);
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.NextPrevBt button{
+    /* width: 100%; */
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(6, 6, 6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.NextPrevBt span{
+    padding: 0px 10px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}

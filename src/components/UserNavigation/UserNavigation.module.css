@@ -1,0 +1,114 @@
+.Navigation{
+    height: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+.logo span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.logo img{
+    height: 50px;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.rightSideuserManage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 10px;
+}
+.username{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.profileCircle{
+    height: 45px;
+    width: 45px;
+    border: 2px solid skyblue;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px 10px;
+}
+.profileCircle img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.profileLogoutUpdateFeature{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.profileLogoutUpdateFeature img{
+    height: 25px;
+    cursor: pointer;
+}
+.rightSideProfile{
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    height: 80px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+}
+.listsItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgba(179, 179, 179,.4);
+    height: 40px;
+    border-radius: 3px;
+}
+.listsItem img{
+    height: 35px;
+    width: 35px;
+    border-right: 1px solid rgba(179, 179, 179,.4);
+}
+.listsItem span,a{
+    padding-left: 10px;
+    color: black;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+.listsItem:nth-child(2){
+    border-top: none;
+}
+.rightSideProfileHide{
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    transition: all .5s ease-in-out;
+    background-color: white;
+    right: 0px;
+}

@@ -1,0 +1,519 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/* font-family: 'Lato', sans-serif; 
+font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+font-family: 'Nunito', sans-serif; */
+
+/* this is globel css is implementing in our project */
+
+:root {
+    --body-dark-Bg: #121212;
+    --card-dark-Bg: #262626;
+    --card-input-Bg: #1D1D1D;
+    --card-input-placholder-Bg: #454545;
+    --Font-solid-white: #FFFFFF;
+    --Font-light-white: #C4C5C5;
+    --Light-blue: #0077FF;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 60px;
+}
+
+
+
+
+
+
+
+/* common style for all */
+
+/* admin dashboard */
+.DasboardSidebar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ffffff;
+    /* transition: all .3s ease-in-out; */
+}
+
+.sidebarHide {
+    width: 60px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.sidebarHide .sidebarLogo {
+    padding-left: 8px;
+}
+
+.sidebarHide .sidebarLogo img {
+    margin-right: 20px;
+}
+
+.sidebarHide .sidebarLogo h2 {
+    font-family: 'Lato', sans-serif;
+    color: #0077FF;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.sidebarHide .lists1list li a,
+.sidebarHide .lists2list li a {
+    padding-left: 14px;
+}
+
+.sidebarHide .lists1list li a span,
+.sidebarHide .lists2list li a span {
+    padding-left: 14px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.sidebarHide .lists1list li img a,
+.sidebarHide .lists2list li img a {
+    height: 35px;
+    width: 35px;
+}
+
+.sidebarLogo {
+    width: 230px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 18px;
+    /* background-color: red; */
+}
+
+.sidebarLogo img {
+    height: 45px;
+    width: 45px;
+}
+
+.sidebar h2 {
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    color: #0077FF;
+}
+
+.lists1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 250px;
+    margin-top: 20px;
+    width: 230px;
+    background-color: #f5f5f5;
+}
+
+.lists1list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.active {
+    background-color: #0077FF;
+    transition: all .3s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+}
+
+.active span {
+    color: white;
+}
+
+.lists1list li {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.lists1list a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid rgb(238, 238, 238);
+    padding-left: 22px;
+    transition: all .3s ease-in-out;
+    color: black;
+}
+
+.lists1list a img {
+    height: 30px;
+    width: 30px;
+}
+
+.lists1list a span {
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: bold; */
+}
+
+.lists1list a:hover,
+.lists2list a:hover {
+    background-color: #0077FF;
+    transition: all .3s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    border: none;
+}
+
+.lists2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    margin-top: 20px;
+    width: 230px;
+    background-color: #f5f5f5;
+}
+
+.lists2list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.lists2list li {
+    height: 100%;
+    width: 100%;
+}
+
+.lists2list a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid rgb(238, 238, 238);
+    padding-left: 22px;
+    transition: all .3s ease-in-out;
+    color: black;
+}
+
+.lists1list li:nth-child(5),
+.lists2list li:nth-child(2) {
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.lists2list img {
+    height: 30px;
+    width: 30px;
+}
+
+.lists2list span {
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main portion */
+.mainPortion {
+    /* background-color: rgb(40, 118, 187); */
+    width: calc(100% - 230px);
+
+}
+
+.mainPortionToggle {
+    width: calc(100% - 60px);
+    /* background-color: steelblue; */
+}
+
+.mainPortionNavbar {
+    height: 70px;
+    /* background-color: red; */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbarleftside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.navbarleftside img {
+    height: 32px;
+    cursor: pointer;
+}
+
+.navbarleftside span {
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbarrightside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+
+.rightsidenavbaritem {
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rightsidenavbaritem img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rightsidenavbaritemforProfile {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #1D1D1D;
+}
+
+.rightsidenavbaritemforProfile a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    margin: none;
+    border-radius: 50%;
+}
+
+.rightsidenavbaritemforProfile a>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    background-color: #0077FF;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* actual main page code start here */
+.mainDashboardFeatureSide {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.mainDashboardcontent {
+    padding: 15px;
+    background-color: #ededed;
+    height: 90vh;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #0077FF;
+    border-radius: 10px;
+}
+
+
+.FeatureContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #0077FF; */
+}
+
+.FeatureNavigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FeatureNavigation h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.FeatureNavigation p {
+    font-family: 'Lato', sans-serif;
+    word-spacing: 10px;
+}
+
+.FeatureNavigation b {
+    font-family: 'Lato', sans-serif;
+}
+
+.FeatureRightSide button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0077FF;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.downloadButton{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.downloadButton button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #006aff;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+.downloadButton button img{
+    height: 100%;
+    width: 100%;
+    filter: invert();
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.goBackButton {
+    position: fixed;
+    left: 3%;
+    top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.goBackButton button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0077FF;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+.goBackButton button img {
+    height: 35px;
+    filter: invert();
+}

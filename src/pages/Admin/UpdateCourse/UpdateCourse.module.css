@@ -1,0 +1,177 @@
+.CourseCardContainer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    right: 0;
+    /* opacity: .4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    z-index: 99;
+}
+.goBackButton{
+    z-index: 3434;
+    position: fixed;
+    left: 3%;
+    top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.goBackButton button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0077FF;
+    cursor: pointer;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+.goBackButton button img {
+    height: 35px;
+    filter: invert();
+}
+.CourseCardContainerHide {
+    display: none;
+    visibility: hidden;
+}
+
+.CourseCard {
+    width: 390px;
+    max-width: 85%;
+    height: 250px;
+    max-height: 70%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.CardTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* background-color:green ; */
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.CardTop .CourseleftSide h2 {
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.CardTop .rightSide {
+    height: 100%;
+    /* background-color: aliceblue; */
+
+}
+
+.CardTop .CourserightSide img {
+    height: 30px;
+    padding: 5px 5px 0px 0px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.CardTop .CourserightSide img:hover {
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+}
+
+.CardBottom {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    /* background-color: #0014ff; */
+}
+
+.CourseAlignfields {
+    height: 60px;
+    /* background-color: #acacac; */
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.CourseCardAlignInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.CourseCardAlignInput label {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.CourseCardAlignInput input {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 175px;
+    padding-left: 5px;
+    border: 2px solid #0077FF;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.CourseCardAlignInput select {
+    outline: none;
+    height: 30px;
+    width: 175px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid #0077FF;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    background-color: #0077FF;
+    color: white;
+}
+
+.CourseCardAlignInput select:focus {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.CardBottom button{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0077FF;
+    cursor: pointer;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

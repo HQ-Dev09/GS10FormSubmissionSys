@@ -1,0 +1,568 @@
+.mainDashboardcontent {
+    padding: 15px;
+    background-color: #ededed;
+    height: 90vh;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+.FeatureContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #0077FF; */
+}
+
+.FeatureNavigation {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.FeatureNavigation h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.FeatureNavigation p {
+    font-family: 'Lato', sans-serif;
+    word-spacing: 10px;
+}
+
+.FeatureNavigation b {
+    font-family: 'Lato', sans-serif;
+}
+
+
+.approvalFormsGS10{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    /* max-width: 90%; */
+    background: linear-gradient(90deg, rgb(126, 173, 239) 0%, rgba(148,196,253,1) 27%, rgba(0,138,255,1) 100%);
+    height: 135px;
+    margin-top: 20px;
+}
+.CardForRegularStudents , .CardForExtraEnrolledStudents{
+    width: 150px;
+    height: 110px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgb(49 49 49 / 20%);
+    background-color: #0035fb;
+    color: white;
+    position: relative;
+    border: 2px solid #0035fb;
+    transition: all .1s ease-in-out;
+}
+
+.CardRegular  ,.CardExtra{
+    cursor: pointer;
+}
+.CardRegular h1 ,.CardExtra h1{
+    height: 65px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif; 
+    padding: 0px 0px 1px 5px;
+}
+.CardRegular p ,.CardExtra p{
+    height: 32px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 0px 1px 5px;
+}
+.RegularStudentsTable{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    right: 0;
+    /* opacity: .8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    z-index: 99;
+}
+.hideTable{
+    display: none;
+    visibility: hidden;
+}
+.Table{
+    height: 400px;
+    width: 100%;
+    max-width: 90%;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.Table .TableTop{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.Table .TableTop h3{
+    padding-left: 10px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+.Table .TableTop img{
+    padding: 5px 10px ;
+    height: 40px;
+    cursor: pointer;
+    object-fit: contain;
+
+}
+.TableBottm{
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+}
+.TableBottm table{
+    width: 100%;
+    height: 1px;
+}
+
+.TableBottm::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: #ffffff;
+}
+
+.TableBottm::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #0077FF;
+    border-radius: 10px;
+}
+.TableBottm table thead{
+    background-color: #0035fb;
+    height: 35px;
+    color: white;
+}
+.TableBottm table thead tr th{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.TableBottm table tbody{
+    background-color: #e9e9e9;
+    height: 30px;
+    color: black;
+}
+.TableBottm table tbody tr td{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding:0px 2px;
+    text-align: center;
+}
+.TableBottm table tbody tr td:nth-child(10) button{
+    outline: none;
+    border: none;
+    margin: 1px 0px;
+    padding: 5px;
+    width: 70px;
+    cursor: pointer;
+}
+.TableBottm table tbody tr td:nth-child(10) button:nth-child(1){
+    background-color: #187800;
+    color: white;
+}
+.TableBottm table tbody tr td:nth-child(10) button:last-child{
+    background-color: #ad0000;
+    color: white;
+}
+.TableBottm table tbody tr td:nth-child(8),.TableBottm table tbody tr td:nth-child(5){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 150px; */
+    padding: 0px;
+    font-size: 12px;
+    height: 100%;
+}
+.TableBottm table tbody tr td .approvedBy{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #0077FF;
+    color: white;
+    border-radius: 0px;
+    height: 100%;
+}
+
+
+/* extra enroll table */
+.ExtraEnrolledrStudentsTable{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    right: 0;
+    /* opacity: .8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    z-index: 99;
+}
+.hideTableExtraEnrolled{
+    display: none;
+    visibility: hidden;
+}
+.hideTable{
+    display: none;
+    visibility: hidden;
+}
+.ExtraEnrolledTable{
+    height: 400px;
+    width: 100%;
+    max-width: 90%;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.ExtraEnrolledTable .ExtraEnrolledTableTop{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.ExtraEnrolledTable .ExtraEnrolledTableTop h3{
+    padding-left: 10px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+.ExtraEnrolledTable .ExtraEnrolledTableTop img{
+    padding: 5px 10px ;
+    height: 40px;
+    cursor: pointer;
+    object-fit: contain;
+
+}
+.ExtraEnrolledTableBottm{
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+}
+.ExtraEnrolledTableBottm table{
+    width: 100%;
+    height: 1px;
+}
+
+.ExtraEnrolledTableBottm::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: #ffffff;
+}
+
+.ExtraEnrolledTableBottm::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #0077FF;
+    border-radius: 10px;
+}
+.ExtraEnrolledTableBottm table thead{
+    background-color: #0035fb;
+    height: 35px;
+    color: white;
+}
+.ExtraEnrolledTableBottm table thead tr th{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.ExtraEnrolledTableBottm table tbody{
+    background-color: #e9e9e9;
+    height: 30px;
+    color: black;
+}
+.ExtraEnrolledTableBottm table tbody tr td{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding:0px 2px;
+    text-align: center;
+}
+.ExtraEnrolledTableBottm table tbody tr td:nth-child(10) button{
+    background-color: red;
+    outline: none;
+    border: none;
+    margin: 1px 0px;
+    padding: 5px;
+    width: 70px;
+    cursor: pointer;
+}
+.ExtraEnrolledTableBottm table tbody tr td:nth-child(10) button:nth-child(1){
+    background-color: #187800;
+    color: white;
+}
+.ExtraEnrolledTableBottm table tbody tr td:nth-child(10) button:last-child{
+    background-color: #ad0000;
+    color: white;
+}
+.ExtraEnrolledTableBottm table tbody tr td:nth-child(8),.ExtraEnrolledTableBottm table tbody tr td:nth-child(5){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 150px; */
+    padding: 0px;
+    font-size: 12px;
+    height: 100%;
+}
+.ExtraEnrolledTableBottm table tbody tr td .approvedBy{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #0077FF;
+    color: white;
+    border-radius: 0px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* making GS10 Form UPdate System */
+.FormUpdateSys{
+    width: 100%;
+    height: 300px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.FormUpdateSys .FormSearchSy{
+    height: 35px;
+    /* padding-left: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.FormUpdateSys .FormSearchSy input{
+    height: 30px;
+    width: 150px;
+    border: none;
+    outline: 1px solid skyblue;
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.FormUpdateSys .FormSearchSy select{
+    height: 30px;
+    border-radius: 0px;
+    outline: 1px solid skyblue;
+    margin-left: 3px;
+    width: 74px;
+    border: none;
+    outline: none;
+}
+.FormUpdateSys .FormSearchSy button{
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    height: 30px;
+    background-color: #0077FF;
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.FormUpdateSys .RegularExtraEnrolledStudentTableContainer{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    margin-top: 10px;
+}
+.FormUpdateSys .RegularExtraEnrolledStudentTableContainer table{
+    width: 100%;
+}
+.FormUpdateSys .RegularExtraEnrolledStudentTableContainer table thead{
+    background-color: #0077FF;
+    width: 100%;
+    color: white;
+}
+.FormUpdateSys .RegularExtraEnrolledStudentTableContainer table thead tr th{
+    height: 25px;
+    width: 50px;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.FormUpdateSys .RegularExtraEnrolledStudentTableContainer table tbody{
+    width: 100%;
+    background-color: white;
+}
+
+.FormUpdateSys .RegularExtraEnrolledStudentTableContainer table tbody tr td{
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.FormUpdateSys .RegularExtraEnrolledStudentTableContainer table tbody tr td select{
+    border-radius: 0px;
+    border: none;
+    /* outline: 1px solid skyblue; */
+    width: 90%;
+    height: 35px;
+    margin: 0px 5px;
+
+}
+.FormUpdateSys .RegularExtraEnrolledStudentTableContainer table tbody tr td button{
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    /* height: 30px; */
+    background-color: #0077FF;
+    font-size: 16px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+
+/* GS10 update button click and then show this page with buttons */
+.PageforUpdate{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    right: 0;
+    /* opacity: .8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    z-index: 99;
+}
+.PageforUpdateHide{
+    visibility: hidden;
+    display: none;
+}
+.PageforUpdateCard{
+    height:300px;
+    width: 300px;
+    max-width: 90%;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.PageforUpdateCardTop{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.PageforUpdateCardTop h1{
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    color: black;   
+}
+.PageforUpdateCardTop img{
+    padding: 5px 10px ;
+    height: 40px;
+    cursor: pointer;
+    object-fit: contain;   
+}
+.PageforUpdateCardContent{
+    margin-top: 10px;
+    width: 100%;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+.PageforUpdateCardContentmanage{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.PageforUpdateCardContentmanage b{
+    padding-left: 2px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: black; 
+}
+.PageforUpdateCardContentmanage p{
+    padding-right: 2px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: black; 
+}
+.PageforUpdateCardButtons{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.PageforUpdateCardButtons button{
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    /* height: 30px; */
+    background-color: #0077FF;
+    font-size: 16px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.PageforUpdateCardButtons button:nth-child(2){
+    background-color: #ad0000;
+}

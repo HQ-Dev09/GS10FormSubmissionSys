@@ -1,0 +1,130 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cards {
+    width: 100%;
+    max-width: 80%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: scale(0.9);
+}
+.cards:hover .card{
+    filter: blur(7px);
+    transform: scale(.9);
+    /* opacity: 0.8; */
+    transition: all .5s ease-in-out;
+}
+.cards .card:hover{
+    filter: blur(0);
+    transform: scale(.93);
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+.circle span{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+}
+
+.circle h2 {
+    color: white;
+    font-size: 4.5rem;
+    padding: 30px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.card .content {
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    height: 230px;
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.content .contentMange{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 35px;
+    flex-wrap: wrap;
+    text-align: start;
+    /* background-color: green; */
+    /* border: 1px solid black; */
+    font-family: 'Montserrat', sans-serif;
+}
+.contentMange b{
+    /* background-color: yellow; */
+    width: 50%;
+    height: 100%;
+}
+.contentMange p{
+    /* background-color: yellow; */
+    width: 50%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+/* .content p {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    background-color: green;
+    height: 130px;
+} */
+
+.content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077FF;
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.card:nth-child(even) .circle,.card:nth-child(even) .content a{
+    background-color: #da2268;
+}
+.card:nth-child(odd) .circle,.card:nth-child(odd) .content a{
+    background-color: #da2268;
+    background-image: linear-gradient(to left top, #0000f4, #0035fb, #004fff, #0064ff, #0077ff);
+}
+/* .card:nth-child(3) .circle,.card:nth-child(3) .content a{
+    background-color: #bb02ff;
+} */
